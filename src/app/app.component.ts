@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pizza-shop';
+
+  constructor() { }
+
+  get countItems() {
+    let items = JSON.parse(localStorage.getItem('car') as any);
+
+    return items ? items.length : 0;
+  }
 }

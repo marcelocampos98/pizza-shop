@@ -1,0 +1,31 @@
+.car {
+    margin-top: 130px;
+}
+
+th {
+    text-align: left;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 1.375em;
+    letter-spacing: 0.05em;
+    color: #b7903c;
+    margin: 0;
+}
+
+table {
+    color: #b7903c;
+}
+
+td {
+    color: #858585;
+}
+
+.delete {
+    cursor: pointer;
+    color: red;
+    font-weight: 500;
+}

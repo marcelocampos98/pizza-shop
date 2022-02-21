@@ -1,0 +1,22 @@
+<div class="container car">
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Pizza</th>
+                <th>Quantidade</th>
+                <th>SubTotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of list">
+                <td>
+                    <span class="delete" (click)="remover(item.id)">X</span>
+                </td>
+                <td>{{item.name}}</td>
+                <td>{{item.count}}</td>
+                <td>{{item.count * item.price | currency}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

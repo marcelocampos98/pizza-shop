@@ -1,0 +1,15 @@
+<div class="card-shop">
+    <div class="card-shop-header">
+        <span *ngIf="item.discount" class="card-shop-discount">-{{item.discount}}%</span>
+        <img class="card-shop-image" width="400" height="400" src="{{item.image}}" alt="{{item.name}}">
+    </div>
+    <div class="card-shop-description">
+        <div class="card-shop-text">
+            <h3 class="card-shop-title">{{item.name}}</h3>
+            <p class="card-shop-price">{{item.price}}</p>
+            <div class="card-shop-butons">
+                <button class="button-add" (click)="addCar(item)">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
